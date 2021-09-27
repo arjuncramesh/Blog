@@ -1,5 +1,5 @@
 # Different Array Methods And Their Uses.
-There are  a lot of methods which does not  necessarily known to all developers .However,code complexity can be reduced in order to make the code perfect wiht the help of applying methods in coding.The reason which makes it difficult for few people to comprehend the correct functionality  of the methods are due to these reasons, Have to speand a lot of time to read and understand ,Some explanations might be complicated, some methods performs some what similar  functions so it's difficult in understanding  the correct requirement of the methods etc...
+There are  a lot of methods which does not  necessarily known to all developers .However,code complexity can be reduced in order to make the code perfect with the help of applying methods in coding.The reason which makes it difficult for few people to comprehend the correct functionality  of the methods are due to these reasons, Have to speand a lot of time to read and understand ,Some explanations might be complicated, some methods performs some what similar  functions so it's difficult in understanding  the correct requirement of the methods etc...
         Here in this blog i've explained the array methods with simple definition and simple examples, please feel free to check it out.....
 
 > ### 1) Symbol.iterator
@@ -36,7 +36,7 @@ Done:-weather the loop is finished or not
 
 > ### 2) .concat()
 
-This is method is used to merge two arrays, and returns a new array.
+This  method is used to merge two arrays, and returns a new array.
 
 #### Example:-
 
@@ -82,7 +82,7 @@ Result:-
 
 > ### 4) .copyWithin(target, start, end)
 
-In this method the elments from the start pont to end point are been copied to the target point, this method returns the same array without modifying the length .
+In this method the elments from the start pont upto the end point are been copied to the target point, this method returns the same array without modifying the length .
 
 #### Example:-
 
@@ -107,7 +107,7 @@ Here in this example the target point is 0(1),starting point 3(3) and ending poi
 
 > ### 5) .entries()
 >
-> This method which returns a new array which is been iterated , the obeject with the array will be having a key value pair .The key is the index and the value is the element in the array.
+> This method which returns a new array which has been iterated , the obeject with the array will be having a key value pair .The key is the index and the value is the element in the array.
 
 #### Example:-
 
