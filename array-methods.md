@@ -1,5 +1,6 @@
 # Different Array Methods And Their Uses.
-Some developers spend a large amount of time to 
+There are  a lot of methods which does not  necessarily known to all developers .However,code complexity can be reduced in order to make the code perfect wiht the help of applying methods in coding.The reason which makes it difficult for few people to comprehend the correct functionality  of the methods are due to these reasons, Have to speand a lot of time to read and understand ,Some explanations might be complicated, some methods performs some what similar  functions so it's difficult in understanding  the correct requirement of the methods etc...
+        Here in this blog i've explained the array methods with simple definition and simple examples, please feel free to check it out.....
 
 > ### 1) Symbol.iterator
 
