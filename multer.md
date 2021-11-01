@@ -26,8 +26,8 @@ For this we need to create a funtion which setup the location to store the image
                 cb(null, 'uploads')     //upload is thefolder name
             },
             filename:(req,file,cb)=>{       //Filename determines how a file should be named in the folder.
-            console.log(file)
-            cb(null,Date.now()+ path.extname(file.originalname))        //null – because we aren’t showing an error.
+                console.log(file)
+                cb(null,Date.now()+ path.extname(file.originalname))        //null – because we aren’t showing an error.
             }
         });
 ```
@@ -36,13 +36,13 @@ For this we need to create a funtion which setup the location to store the image
     Here we are creating a  Middleware whose funtion is to filter the file and also the above funtion(in the 3rd pont)that  we have created for setting up the location is being called in this funtion(filter funtion)
 ```js
   const imageUpload = multer({
-  storage: storage,     //The  above funtion  storage   called here for setting up the location
-  limits: {
-    fileSize: 1000000    // restricting the file size upto a max of 1MB
-  },
-  fileFilter(req, file, cb) {        //method for filtering
-    if (!file.originalname.match(/\.(png|jpg)$/)) {         // upload only png and jpg format
-       return cb(new Error('Please upload a Image'))
+      storage: storage,     //The  above funtion  storage   called here for setting up the location
+      limits: {
+            fileSize: 1000000    // restricting the file size upto a max of 1MB
+      },
+     fileFilter(req, file, cb) {        //method for filtering
+           if (!file.originalname.match(/\.(png|jpg)$/)) {         // upload only png and jpg format
+           return cb(new Error('Please upload a Image'))
      }
    cb(undefined, true)
 }
