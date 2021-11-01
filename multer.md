@@ -1,6 +1,6 @@
 # Image Upload inside a server using Multer in Node.js and Express.js
 
-#I was thinking about a way to upload  profile pics into the Data base as part of my project and  i was having this idea of converting the image into a string using base64 and save it inside the db ,but it's not the proper or in otherwords not the correct way to do it. i did  some research and i figured it out that we should save the files inside your server, and we can do it with   the help of a  package called multer .This blog is about Image Upload Using Multer in Node.js and Express.js and i have made this blog as simple as possible.
+I was thinking about a way to upload  profile pics into the Data base as part of my project and  i was having this idea of converting the image into a string using base64 and save it inside the db ,but it's not the proper or in otherwords not the correct way to do it. i did  some research and i figured it out that we should save the files inside your server, and we can do it with   the help of a  package called multer .This blog is about Image Upload Using Multer in Node.js and Express.js and i have made this blog as simple as possible.
 
 ## What is Multer?
 
