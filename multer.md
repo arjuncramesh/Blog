@@ -18,7 +18,7 @@ Multer is a node.js middleware for handling multipart/form-data, which is primar
 
 ### 3) Set up the location(location were the file has to be upload)
 
-For this u need to create a funtion which setup the location to store the image.
+For this we need to create a funtion which setup the location to store the image.
 
 ```js
         const storage = multer.diskStorage({
