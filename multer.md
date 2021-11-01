@@ -1,6 +1,6 @@
 # Image Upload inside a server using Multer in Node.js and Express.js
 
-    I was thinking about a way to upload  profile pics into the Data base as part of my project and  i was having this idea of converting the image into a string using base64 and save it inside the db ,but it's not the proper or in otherwords not the correct way to do it. i did  some research and i figured it out that we should save the files inside your server, and we can do it with   the help of a  package called multer .This blog is about Image Upload Using Multer in Node.js and Express.js and i have made this blog as simple as possible.
+#I was thinking about a way to upload  profile pics into the Data base as part of my project and  i was having this idea of converting the image into a string using base64 and save it inside the db ,but it's not the proper or in otherwords not the correct way to do it. i did  some research and i figured it out that we should save the files inside your server, and we can do it with   the help of a  package called multer .This blog is about Image Upload Using Multer in Node.js and Express.js and i have made this blog as simple as possible.
 
 ## What is Multer?
 
@@ -22,10 +22,10 @@
 
 ```js
         const storage = multer.diskStorage({
-            destination:(req,file,cb)=>{       //destination uses for the  application to know where to store images
+            destination:(req,file,cb)=>{       //destination is used by the application to know the location path  to store the images
                 cb(null, 'uploads')     //upload is thefolder name
             },
-            filename:(req,file,cb)=>{       //Filename determines what a file should be named in the folder.
+            filename:(req,file,cb)=>{       //Filename determines how a file should be named in the folder.
             console.log(file)
             cb(null,Date.now()+ path.extname(file.originalname))        //null – because we aren’t showing an error.
             }
@@ -33,10 +33,10 @@
 ```
 ### 4) file being filtered (since we are uploading an image the size and format should be filterd before uploading)
 
-    Here we are creating a  Middleware whose funtion is to filter the file and also ,the above funtion(in the 3rd pont)that  we have created for setting up the location is being called in this funtion(filter funtion)
+    Here we are creating a  Middleware whose funtion is to filter the file and also the above funtion(in the 3rd pont)that  we have created for setting up the location is being called in this funtion(filter funtion)
 ```js
-    const imageUpload = multer({
-  storage: storage,     //The  set up location function  called here
+  const imageUpload = multer({
+  storage: storage,     //The  above funtion  storage   called here for setting up the location
   limits: {
     fileSize: 1000000    // restricting the file size upto a max of 1MB
   },
